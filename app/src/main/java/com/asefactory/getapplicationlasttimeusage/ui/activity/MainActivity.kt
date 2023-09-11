@@ -1,4 +1,4 @@
-package com.asefactory.getapplicationlasttimeusage
+package com.asefactory.getapplicationlasttimeusage.ui.activity
 
 import android.app.usage.UsageStats
 import android.app.usage.UsageStatsManager
@@ -16,16 +16,21 @@ import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.asefactory.getapplicationlasttimeusage.ui.adapters.AppListAdapter
+import com.asefactory.getapplicationlasttimeusage.R
 import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
         val appList = getApplicationsList().map { packageInfo -> packageInfo.packageName }
         val appUsageStats = getApplicationUsageStats(appList)
         val dangerousPermissionApps = checkIfAppsAreDangerous(getApplicationsList())

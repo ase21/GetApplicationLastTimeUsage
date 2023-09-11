@@ -1,12 +1,12 @@
-package com.asefactory.getapplicationlasttimeusage
+package com.asefactory.getapplicationlasttimeusage.ui.adapters
 
 import android.app.usage.UsageStats
-import android.content.pm.PackageInfo
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.asefactory.getapplicationlasttimeusage.R
 import java.text.SimpleDateFormat
 import java.util.*
 
