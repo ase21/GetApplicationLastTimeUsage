@@ -45,16 +45,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-
-    //
-    implementation "androidx.lifecycle:lifecycle-common:2.5.1"
-    // LifeCycle - ViewModel
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
-    // LifeCycle - LiveData
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
-    // LifeCycle - Saved state module for ViewModel
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx'
-    implementation 'androidx.work:work-runtime-ktx:2.7.0'
-
 }
