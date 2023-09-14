@@ -1,4 +1,4 @@
-package com.asefactory.getapplicationlasttimeusage.ui.fragments.instalation_date
+package com.asefactory.getapplicationlasttimeusage.ui.fragments.installation_date
 
 import android.os.Bundle
 import android.view.View

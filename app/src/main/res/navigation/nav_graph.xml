@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/installationDatesFragment">
+
+    <fragment
+        android:id="@+id/installationDatesFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.installation_date.InstallationDatesFragment"
+        android:label="InstallationDatesFragment"
+        tools:layout="@layout/fragment_installation_dates"/>
+    <fragment
+        android:id="@+id/lastUsingDateFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.last_using_date.LastUsingDateFragment"
+        android:label="LastUsingDateFragment"
+        tools:layout="@layout/fragment_last_using_date"/>
+    <fragment
+        android:id="@+id/usingTimeFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.using_time.UsingTimeFragment"
+        android:label="UsingTimeFragment"
+        tools:layout="@layout/fragment_using_time"/>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.settings.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+</navigation>
