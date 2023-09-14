@@ -4,13 +4,15 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
+import com.asefactory.getapplicationlasttimeusage.domain.repositories.AppsRepository
 
-class AppsRepository(private val context: Context) {
+class AppsRepositoryImpl(private val context: Context): AppsRepository {
 
-    fun getApplicationsList(): List<PackageInfo> {
+    override fun getApplicationsList(): Set<PackageInfo> {
         return context.packageManager
             .getInstalledPackages(PackageManager.GET_PERMISSIONS)
             .filter { packageInfo -> !isSystem(packageInfo) }
+            .toSet()
     }
 
     private fun isSystem(info: PackageInfo): Boolean {

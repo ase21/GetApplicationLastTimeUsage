@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">GetApplicationLastTimeUsage</string>
+    <string name="app_name">AppTime</string>
+    <string name="installation_time_header">Installation Time</string>
+    <string name="last_using_date_header">Time of last use</string>
+    <string name="using_time_header">Usage percent per last month</string>
+    <string name="settings_header">Settings</string>
 </resources>
