@@ -11,6 +11,7 @@
         android:layout_width="84dp"
         android:layout_height="84dp"
         android:layout_margin="8dp"
+        android:elevation="4dp"
         tools:src="@android:drawable/presence_invisible" />
 
     <LinearLayout
