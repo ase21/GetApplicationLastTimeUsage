@@ -1,4 +1,4 @@
-package com.asefactory.getapplicationlasttimeusage.domain.models
+package com.asefactory.domain.models
 
 data class ApplicationInfoWithInstallationDate(
     val icon: String,
