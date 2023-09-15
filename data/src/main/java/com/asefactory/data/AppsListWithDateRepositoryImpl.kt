@@ -4,20 +4,22 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
+import com.asefactory.domain.models.ApplicationInfoWithInstallationDate
 import com.asefactory.domain.repositories.AppsRepository
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-class AppsListWithDateRepositoryImpl(private val context: Context) :
-    AppsRepository {
+class AppsListWithDateRepositoryImpl(
+    private val context: Context,
+    private val packagesInformationProvider: PackagesInformationProvider
+) : AppsRepository {
 
-    override fun getApplicationsList(): List<com.asefactory.domain.models.ApplicationInfoWithInstallationDate> {
-        return context.packageManager
-            .getInstalledPackages(PackageManager.GET_PERMISSIONS)
+    override fun getApplicationsList(): List<ApplicationInfoWithInstallationDate> {
+        return packagesInformationProvider.getPackagesInformation()
             .filter { packageInfo -> !isSystem(packageInfo) }
             .map { packageInfo ->
-                com.asefactory.domain.models.ApplicationInfoWithInstallationDate(
+                ApplicationInfoWithInstallationDate(
                     getApplicationIcon(packageInfo),
                     convertLongToTime(packageInfo.firstInstallTime),
                     packageInfo.packageName,
