@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.asefactory.domain.models.ApplicationInfoWithInstallationDate
 import com.asefactory.getapplicationlasttimeusage.R
-import com.asefactory.getapplicationlasttimeusage.domain.models.ApplicationInfoWithInstallationDate
 
 class AppListAdapter(
     private val apps: List<ApplicationInfoWithInstallationDate>,
