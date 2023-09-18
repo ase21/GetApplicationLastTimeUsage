@@ -11,4 +11,9 @@
 
     <string name="settings_header">Settings</string>
     <string name="settings_bottom_menu">Settings</string>
+    <string name="permission_dialog_title">Permission request</string>
+    <string name="permission_dialog_description">The application requires access to usage information to ensure maximum efficiency</string>
+    <string name="permission_dialog_neutral_button">Cancel</string>
+    <string name="permission_dialog_positive_button">Allow</string>
+    <string name="share">Share</string>
 </resources>

@@ -10,6 +10,6 @@ class PackagesInformationProvider(context: Context) {
 
     fun getPackagesInformation(): List<PackageInfo> {
         return packageManager
-            .getInstalledPackages(PackageManager.GET_PERMISSIONS).toList()
+            .getInstalledPackages(PackageManager.GET_PERMISSIONS)
     }
 }

@@ -20,10 +20,11 @@ class AppsListWithDateRepositoryImpl(
             .filter { packageInfo -> !isSystem(packageInfo) }
             .map { packageInfo ->
                 ApplicationInfoWithInstallationDate(
-                    getApplicationIcon(packageInfo),
-                    convertLongToTime(packageInfo.firstInstallTime),
-                    packageInfo.packageName,
-                    packageInfo.applicationInfo.loadLabel(context.packageManager).toString()
+                    icon = getApplicationIcon(packageInfo),
+                    installationDateInMillis = packageInfo.firstInstallTime,
+                    installationDate = convertLongToTime(packageInfo.firstInstallTime),
+                    packageName = packageInfo.packageName,
+                    label = packageInfo.applicationInfo.loadLabel(context.packageManager).toString()
                 )
             }
     }
