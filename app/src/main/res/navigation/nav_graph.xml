@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/installationDatesFragment"
-        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.installation_date.InstallationDatesFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.installDate.InstallationDatesFragment"
         android:label="InstallationDatesFragment"
         tools:layout="@layout/fragment_installation_dates"/>
     <fragment
         android:id="@+id/lastUsingDateFragment"
-        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.last_using_date.LastUsingDateFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.lastUsage.LastUsingDateFragment"
         android:label="LastUsingDateFragment"
         tools:layout="@layout/fragment_last_using_date"/>
     <fragment
         android:id="@+id/usingTimeFragment"
-        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.using_time.UsingTimeFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.totalUsingTime.UsingTimeFragment"
         android:label="UsingTimeFragment"
         tools:layout="@layout/fragment_using_time"/>
     <fragment
