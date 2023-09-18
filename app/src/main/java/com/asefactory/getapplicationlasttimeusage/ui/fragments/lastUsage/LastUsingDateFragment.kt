@@ -1,4 +1,4 @@
-package com.asefactory.getapplicationlasttimeusage.ui.fragments.last_using_date
+package com.asefactory.getapplicationlasttimeusage.ui.fragments.lastUsage
 
 import androidx.fragment.app.Fragment
 import com.asefactory.getapplicationlasttimeusage.R

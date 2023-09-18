@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
+import com.asefactory.data.packageInfoProvider.PackagesInformationProvider
 import com.asefactory.domain.models.ApplicationInfoWithInstallationDate
 import com.asefactory.domain.repositories.AppsRepository
 import java.text.SimpleDateFormat
@@ -12,7 +13,7 @@ import java.util.Locale
 
 class AppsListWithDateRepositoryImpl(
     private val context: Context,
-    private val packagesInformationProvider: PackagesInformationProvider
+    private val packagesInformationProvider: PackagesInformationProvider,
 ) : AppsRepository {
 
     override fun getApplicationsList(): List<ApplicationInfoWithInstallationDate> {

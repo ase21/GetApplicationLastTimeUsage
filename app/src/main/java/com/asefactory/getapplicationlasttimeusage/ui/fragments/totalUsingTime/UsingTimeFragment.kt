@@ -1,4 +1,4 @@
-package com.asefactory.getapplicationlasttimeusage.ui.fragments.using_time
+package com.asefactory.getapplicationlasttimeusage.ui.fragments.totalUsingTime
 
 import androidx.fragment.app.Fragment
 import com.asefactory.getapplicationlasttimeusage.R
