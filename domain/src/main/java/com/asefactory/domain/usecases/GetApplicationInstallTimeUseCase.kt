@@ -8,13 +8,6 @@ class GetApplicationInstallTimeUseCase(
 ) {
     fun execute(): List<ApplicationInfoWithInstallationDate> {
         return appsRepository.getApplicationsList()
-            .map { currentInfo ->
-                ApplicationInfoWithInstallationDate(
-                    icon = currentInfo.icon,
-                    packageName = currentInfo.packageName,
-                    label = currentInfo.label,
-                    installationDate = currentInfo.installationDate
-                )
-            }
+            .sortedByDescending { it.installationDate }
     }
 }

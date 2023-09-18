@@ -1,10 +1,5 @@
-package com.asefactory.getapplicationlasttimeusage
+package com.asefactory.data
 
-import android.app.usage.UsageStatsManager
-import android.content.Context
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Date
 
 //        запуск настроек для доступа
 //        startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
@@ -52,35 +47,3 @@ import java.util.Date
 
 
 
-//private fun getApplicationUsageStats(appList: List<String>): List<Triple<String, String, String>> {
-//    val beginCal = Calendar.getInstance()
-//    beginCal.add(Calendar.DAY_OF_YEAR, -365)
-//
-//    val endCal = Calendar.getInstance()
-//    val usageStatsManager = getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
-//    val queryUsageStats = usageStatsManager
-//        .queryAndAggregateUsageStats(
-//            beginCal.timeInMillis, endCal.timeInMillis
-//        )
-//    val resultPair = queryUsageStats
-//        .filter { usageStats -> appList.any { packageName -> packageName.equals(usageStats.key) } }
-//        .toList()
-//        .sortedByDescending { pair -> pair.second.totalTimeInForeground }
-//
-//    var total = 0L
-//    val resultTriple = mutableListOf<Triple<String, String, String>>()
-//    resultPair.forEach { pair ->
-//        total = total + pair.second.totalTimeInForeground
-//    }
-//    resultPair.forEach { pair ->
-//        resultTriple.add(
-//            Triple(
-//                pair.first,
-//                convertLongToTime(pair.second.lastTimeVisible),
-//                (pair.second.totalTimeInForeground * 100 / total).toString()
-//            )
-//        )
-//    }
-//    return resultTriple
-//
-//}
