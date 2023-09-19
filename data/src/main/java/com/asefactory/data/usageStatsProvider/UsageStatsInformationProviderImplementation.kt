@@ -1,16 +1,16 @@
-package com.asefactory.data
+package com.asefactory.data.usageStatsProvider
 
 import android.app.usage.UsageStats
 import android.app.usage.UsageStatsManager
 import android.content.Context
 import java.util.Calendar
 
-class UsageStatsProvider(context: Context) {
+class UsageStatsInformationProviderImplementation(context: Context) : UsageStatsInformationProvider{
 
     private val usageStatsManager =
         context.getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
 
-    private fun getApplicationUsageStatsByLastYear(): Map<String, UsageStats> {
+    override fun getApplicationUsageStatsByLastYear(): Map<String, UsageStats> {
         val beginCal = Calendar.getInstance()
         beginCal.add(Calendar.DAY_OF_YEAR, -365)
 
