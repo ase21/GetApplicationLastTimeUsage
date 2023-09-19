@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 
-class PackagesInformationProviderImpl(context: Context): PackagesInformationProvider {
+class PackagesInformationProviderImplementation(context: Context): PackagesInformationProvider {
 
     private val packageManager = context.packageManager
 
