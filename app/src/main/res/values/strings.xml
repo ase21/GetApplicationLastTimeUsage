@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">GetApplicationLastTimeUsage</string>
+    <string name="app_name">AppTime</string>
+    <string name="installation_time_header">Installation Time</string>
+    <string name="installation_time_bottom_menu">Install Time</string>
+
+    <string name="last_using_date_header">Time of last use</string>
+    <string name="last_using_date_bottom_menu">Last time</string>
+
+    <string name="using_time_header">Usage percent per last month</string>
+    <string name="using_time_bottom_menu">Last usage</string>
+
+    <string name="settings_header">Settings</string>
+    <string name="settings_bottom_menu">Settings</string>
+    <string name="permission_dialog_title">Permission request</string>
+    <string name="permission_dialog_description">The application requires access to usage information to ensure maximum efficiency</string>
+    <string name="permission_dialog_neutral_button">Cancel</string>
+    <string name="permission_dialog_positive_button">Allow</string>
+    <string name="share">Share</string>
 </resources>

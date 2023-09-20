@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/installationDatesFragment"
+        android:icon="@drawable/ic_downloads"
+        android:contentDescription="@string/installation_time_bottom_menu"
+        android:title="@string/installation_time_bottom_menu" />
+    <item
+        android:id="@+id/lastUsingDateFragment"
+        android:icon="@drawable/ic_device_mobile"
+        android:contentDescription="@string/last_using_date_bottom_menu"
+        android:title="@string/last_using_date_bottom_menu" />
+    <item
+        android:id="@+id/usingTimeFragment"
+        android:icon="@drawable/ic_clock"
+        android:contentDescription="@string/using_time_bottom_menu"
+        android:title="@string/using_time_bottom_menu" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:contentDescription="@string/settings_bottom_menu"
+        android:title="@string/settings_bottom_menu" />
+
+</menu>
