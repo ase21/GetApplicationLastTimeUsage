@@ -1,6 +1,6 @@
 package com.asefactory.getapplicationlasttimeusage.di
 
-import com.asefactory.data.AppsListWithDateRepositoryImpl
+import com.asefactory.data.repositories.AppsListWithDateRepositoryImpl
 import com.asefactory.data.packageInfoProvider.PackagesInformationProvider
 import com.asefactory.data.packageInfoProvider.PackagesInformationProviderImplementation
 import com.asefactory.data.usageStatsProvider.UsageStatsInformationProvider
