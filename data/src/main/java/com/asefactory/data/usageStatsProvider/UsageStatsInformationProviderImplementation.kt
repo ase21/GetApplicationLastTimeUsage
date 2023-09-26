@@ -20,6 +20,5 @@ class UsageStatsInformationProviderImplementation(context: Context) : UsageStats
             .queryAndAggregateUsageStats(
                 beginCal.timeInMillis, endCal.timeInMillis
             )
-            .toMap()
     }
 }

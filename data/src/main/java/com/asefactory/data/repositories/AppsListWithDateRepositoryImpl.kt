@@ -1,4 +1,4 @@
-package com.asefactory.data
+package com.asefactory.data.repositories
 
 import android.content.Context
 import android.content.pm.ApplicationInfo
