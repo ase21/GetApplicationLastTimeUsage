@@ -16,9 +16,10 @@ class UsageStatsInformationProviderImplementation(context: Context) : UsageStats
 
         val endCal = Calendar.getInstance()
 
-        return usageStatsManager
+        val result = usageStatsManager
             .queryAndAggregateUsageStats(
                 beginCal.timeInMillis, endCal.timeInMillis
             )
+        return result
     }
 }
