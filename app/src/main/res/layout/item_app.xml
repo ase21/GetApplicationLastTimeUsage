@@ -8,13 +8,13 @@
     android:layout_margin="8dp"
     android:background="@drawable/card_background_corners">
 
-    <ImageView
+    <com.asefactory.getapplicationlasttimeusage.ui.customView.CircleImageView
         android:id="@+id/application_icon_image_view"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_margin="8dp"
-        android:elevation="4dp"
-        tools:src="@android:drawable/presence_invisible" />
+        android:elevation="10dp"
+        android:src="@android:drawable/presence_invisible" />
 
     <LinearLayout
         android:layout_width="match_parent"
