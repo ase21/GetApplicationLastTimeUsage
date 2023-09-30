@@ -1,17 +1,15 @@
 package com.asefactory.getapplicationlasttimeusage.trytest;
 
-import androidx.annotation.Nullable;
-
 import org.jetbrains.annotations.NotNull;
 
-public class Dollar extends Money{
+public class Franc extends Money {
 
-    public Dollar(int amount) {
+    public Franc(int amount) {
         this.amount = amount;
     }
 
     @NotNull
     public Money times(int multiplier) {
-        return new Dollar(amount*multiplier);
+        return new Franc(amount * multiplier);
     }
 }
