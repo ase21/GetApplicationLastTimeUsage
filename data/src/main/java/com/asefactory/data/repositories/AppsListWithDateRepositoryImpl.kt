@@ -18,7 +18,7 @@ class AppsListWithDateRepositoryImpl(
 
     override fun getApplicationsList(): List<ApplicationInfoWithInstallationDate> {
         return packagesInformationProvider.getPackagesInformation()
-            .filter { packageInfo -> !isSystem(packageInfo) }
+            .filter { !isSystem(it) }
             .map { packageInfo ->
                 ApplicationInfoWithInstallationDate(
                     icon = getApplicationIcon(packageInfo),
