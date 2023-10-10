@@ -5,7 +5,7 @@ import androidx.annotation.Nullable;
 
 import org.jetbrains.annotations.NotNull;
 
-public class Money {
+public class Money implements Expression {
 
     protected int amount;
     private String currency;
@@ -16,7 +16,7 @@ public class Money {
     }
 
     @NotNull
-    public Money times(int multiplier) {
+    public Expression times(int multiplier) {
         return new Money(amount * multiplier, currency());
     }
 
@@ -44,5 +44,16 @@ public class Money {
 
     public @NotNull String currency() {
         return currency;
+    }
+
+    @NotNull
+    public Expression plus(@NotNull Expression addend) {
+        return new Sum(this, addend);
+    }
+
+    @Override
+    public Money reduce(Bank bank, String to) {
+        int rate = bank.rate(currency, to);
+        return new Money(amount/rate, to);
     }
 }
