@@ -1,17 +1,18 @@
-package com.asefactory.getapplicationlasttimeusage.ui.fragments.installDate
+package com.asefactory.getapplicationlasttimeusage.ui.fragments.lastUsage
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.asefactory.domain.usecases.getinstalltime.GetInstallTime
+import com.asefactory.domain.usecases.lastUsage.LastUsageTime
 import com.asefactory.getapplicationlasttimeusage.ui.model.AppInfoDisplayingDataObject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.launch
 
-class InstallDatesViewModel(
-    private val useCase: GetInstallTime,
+class LastUsageViewModel(
+    private val useCase: LastUsageTime,
 ) : ViewModel() {
+
 
     private val _appListSharedFlow = MutableSharedFlow<List<AppInfoDisplayingDataObject>>()
     val appListSharedFlow = _appListSharedFlow.asSharedFlow()
@@ -23,7 +24,7 @@ class InstallDatesViewModel(
                     icon = appInfo.icon,
                     label = appInfo.label,
                     packageName = appInfo.packageName,
-                    technicalInfo = appInfo.installationDate,
+                    technicalInfo = appInfo.lastUsageDate,
                 )
             }
             _appListSharedFlow.emit(value)
