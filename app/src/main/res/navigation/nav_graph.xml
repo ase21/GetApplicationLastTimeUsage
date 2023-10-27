@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_installation_dates"/>
     <fragment
         android:id="@+id/lastUsingDateFragment"
-        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.lastUsage.LastUsingDateFragment"
+        android:name="com.asefactory.getapplicationlasttimeusage.ui.fragments.lastUsage.LastUsageFragment"
         android:label="LastUsingDateFragment"
         tools:layout="@layout/fragment_last_using_date"/>
     <fragment

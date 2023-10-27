@@ -29,13 +29,13 @@
             tools:text="App Package" />
 
         <TextView
-            android:id="@+id/lastUsage"
+            android:id="@+id/packageName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Last Usage" />
 
         <TextView
-            android:id="@+id/usagePercent"
+            android:id="@+id/otherInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Usage Percent" />
